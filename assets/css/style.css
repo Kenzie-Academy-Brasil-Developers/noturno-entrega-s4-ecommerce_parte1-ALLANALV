@@ -1,0 +1,41 @@
+/*
+ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
+---------------------------------------
+*/
+
+
+/*  FONTS  */
+/*font family: Inter*/
+/*  FONTS  */
+
+/* VARIÁVEIS CSS */
+:root {
+    --color-texts: #828282;
+    --background-containers: #F5F5F5;
+    --background-color-buttons: #6B54DE;
+    --background-color-itens: #2E245E;
+    --color-title-products: #333333;
+    
+    --font-texts: 'Inter', sans-serif;;
+}
+
+/* VARIÁVEIS CSS */
+
+/* HEADER */
+
+/* HEADER */
+
+
+/* CONTEÚDO PRINCIPAL */
+
+/* CONTEÚDO PRINCIPAL */
+
+
+/* FOOTER */
+
+/* FOOTER */
+
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES */
