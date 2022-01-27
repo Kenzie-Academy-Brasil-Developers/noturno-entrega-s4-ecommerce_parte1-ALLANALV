@@ -10,6 +10,7 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
 
 /* VARIÁVEIS CSS */
 :root {
+    font-size: 8px;
     --color-texts: #828282;
     --background-containers: #F5F5F5;
     --background-color-buttons: #6B54DE;
@@ -22,7 +23,40 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
 /* VARIÁVEIS CSS */
 
 /* HEADER */
-
+    header{
+        background-color: var(--background-containers);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0px 40px;
+    }
+        
+    .logo{
+       
+    }
+    .logo h1{
+        font-size: 2.8rem;
+        font-family: var(--font-texts);
+    }
+    .ico-menu{
+        height: 30px;
+        width: 30px;
+    }
+    .ico-menu img{
+        width: 100%;
+        height: 100%;
+    }
+    .main-menu{
+        display: none;
+    }
+    .list-menu{
+    }
+    .list-menu li{}
+    .list-menu li a{
+    }
+    #every{
+    }
 /* HEADER */
 
 
@@ -37,5 +71,38 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
 
 
 /* MEDIA QUERIES */
-
+@media screen and (min-width: 670px){
+   /*  HEADER */
+        header{
+            height: 70px;
+            padding: 0px 50px;
+        }
+        .logo h1{
+            font-size: 3.8rem;
+        }
+        .ico-menu{
+            display: none;
+        }
+        .main-menu{
+            display: block;
+            margin-left: 70px;
+        }
+        .list-menu{
+            min-width: 300px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .list-menu li{
+            margin: 0px 10px;
+        }
+        .list-menu li a{
+            font-family: var(--font-texts);
+            color: var(--color-texts);
+            font-size: 2rem;
+        }
+        #every{
+            color: #000;
+ }
+ /*  HEADER */
+}
 /* MEDIA QUERIES */
