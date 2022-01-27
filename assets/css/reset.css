@@ -3,11 +3,16 @@ RESET DE ESTILIZAÇÃO DOS ELEMENTOS HTML PADRÃO
 -----------------------------------------------
 */
 
-body,header,main,footer,section,div,p,img,figure,
-ul,li,a,input,button,h1,h2,span{
+body,header,main,footer,section,div,nav,
+p,img,figure,ul,li,a,input,button,h1,h2
+,span{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
 }
