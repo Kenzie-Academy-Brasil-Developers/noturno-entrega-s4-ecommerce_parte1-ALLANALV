@@ -32,15 +32,12 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
         height: 70px;
         padding: 0px 40px;
     }
-        
-    .logo{
-       
-    }
     .logo h1{
         font-size: 2.8rem;
         font-family: var(--font-texts);
     }
     .ico-menu{
+        display: block;
         height: 30px;
         width: 30px;
     }
@@ -50,13 +47,6 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
     }
     .main-menu{
         display: none;
-    }
-    .list-menu{
-    }
-    .list-menu li{}
-    .list-menu li a{
-    }
-    #every{
     }
 /* HEADER */
 
@@ -154,7 +144,7 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
         font-size: 2rem;
         font-family: var(--font-texts);
         text-align: center;
-        margin: 15px 0px;
+        margin: 15px;
     }
     .inforProduct h2{
         font-size: 2.6rem;
@@ -223,6 +213,10 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
             font-family: var(--font-texts);
             color: var(--color-texts);
             font-size: 2rem;
+        }
+        .list-menu li a:hover{
+            color: #000;
+            font-weight: bold;
         }
         #every{
             color: #000;
@@ -316,6 +310,15 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
         font-size: 2rem;
         font-family: var(--font-texts);
         color: var(--color-texts);
+    }
+}
+
+@media screen and (min-width: 1800px){
+    header{
+        padding: 0px 220px;
+    }
+    .logo{
+        margin: 0px 32px;
     }
 }
 /* MEDIA QUERIES */
