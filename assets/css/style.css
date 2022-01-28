@@ -16,6 +16,7 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
     --background-color-buttons: #6B54DE;
     --background-color-itens: #2E245E;
     --color-title-products: #333333;
+    --color-price: #2E245E;
     
     --font-texts: 'Inter', sans-serif;;
 }
@@ -61,6 +62,128 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
 
 
 /* CONTEÚDO PRINCIPAL */
+    main{
+        margin: 20px 0px;
+    }
+    .container-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* seçãoo da ação do usuário */
+    .action-users{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .input-reserching{
+        margin-bottom: 15px;
+    }
+    .input-reserching input{
+        padding: 8px;
+        border: 1px solid var(--background-color-itens);
+        background-color: var(--background-containers);
+    }
+    .input-reserching input::placeholder{
+        font-size: 2rem;
+    }
+    .input-reserching button{
+        border: 1px solid transparent;
+        padding: 8px;
+        background-color: var(--background-color-buttons);
+        color: #fff;
+        font-weight: 800;
+    }
+    .desktopshoppingCar{
+        display: none;
+    }
+    .shoppingCar #checkCar{
+        display: block;
+        width: 50px;
+        margin: auto;
+    }
+    #checkCar img{
+        width: 100%;
+    }
+    .shoppingCar span{
+        font-size: 1.5rem;
+        font-family: var(--font-texts);
+        color: var(--color-texts);
+    }
+
+    /* seção da vitrine e cards dos produtos */
+    
+    .listCard-products{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cardProduct{
+        margin: 0px 15px;
+        margin-bottom: 10px;
+        margin-right: 50px;
+        width: 296px;
+        padding: 0px 5px;
+    }
+    .cardProduct:hover{
+        width: 310px;
+        border: 1px solid #333333;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    .cardProduct .boximage-product{
+        width: 100%;
+        height: 150px;
+        background-color: var(--background-containers);
+    }
+    .boximage-product img{
+        width: 100%;
+        height: 100%;
+    }
+    .cardProduct .inforProduct{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+    .inforProduct .category{
+        background-color: var(--background-color-itens);
+        color: #fff;
+        padding: 5px;
+        width: 100px;
+        font-size: 2rem;
+        font-family: var(--font-texts);
+        text-align: center;
+    }
+    .inforProduct h2{
+        font-size: 2.8rem;
+        margin: 10px 0px;
+        font-family: var(--font-texts);
+        color: var(--color-title-products);
+        flex-basis: 60px;
+    }
+    .inforProduct .textabout-product{     
+        margin: 10px 0px;
+        font-family: var(--font-texts);
+        font-size: 2rem;
+        color: var(--color-texts);
+
+    }
+    .inforProduct .price{
+        color: var(--color-price);
+        font-size: 1.5rem;
+        font-family: var(--font-texts);
+    }
+    .inforProduct .addCar{
+        color: var(--color-texts);
+        font-size: 2rem;
+        font-family: var(--font-texts);
+        text-decoration: underline;
+    }
+    .addCar:hover{
+        color: var(--background-color-buttons);
+        cursor: pointer;
+    }
 
 /* CONTEÚDO PRINCIPAL */
 
@@ -104,5 +227,78 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
             color: #000;
  }
  /*  HEADER */
+}
+@media screen and (min-width: 1440px){
+    /* vitrine de roupas */
+    .container-flex{
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .action-users{
+        flex-basis: 400px;
+    }
+    .sectionRacks{
+        max-width: 1000px;
+    }
+    .cardProduct{
+        margin-right: 15px;
+    }
+    .shoppingCar{
+        display: none;
+    }
+    .desktopshoppingCar{
+        display: block;
+        width: 100%;
+    }
+    .desktopshoppingCar h2{
+        font-family: var(--font-texts);
+        background-color: var(--background-color-buttons);
+        color: #fff;
+        font-size: 2.1rem;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-reserching{
+        width: 100%;
+    }
+    .input-reserching input{
+        width: 70%;
+        height: 50px;
+        border: none;
+    }
+    .input-reserching input::placeholder{
+        padding-left: 3px;
+        font-size: 2.5rem;
+    }
+    .input-reserching button{
+        padding: 0px 10px;
+        width: 29%;
+        height: 50px;
+    }
+    .input-reserching button:hover{
+        background-color: #4836a5;
+        cursor: pointer;
+    }
+    .desktopshoppingCar .car{
+        background-color: #F5F5F5;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .car p{
+        font-size: 3rem;
+        font-family: var(--font-texts);
+        color: #000;
+        font-weight: bold;
+    }
+    .car span{
+        font-size: 2rem;
+        font-family: var(--font-texts);
+        color: var(--color-texts);
+    }
 }
 /* MEDIA QUERIES */
