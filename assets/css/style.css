@@ -246,7 +246,7 @@ ESTRUTURA BASE DE ESTILIZAÇÃO DA PAGINA
         justify-content: center;
     }
     .action-users{
-        flex-basis: 400px;
+        width: 347px;
     }
     .sectionRacks{
         max-width: 1000px;
